@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+	<display-name>sagui-web-test</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<description></description>
+		<display-name>ResourceServlet</display-name>
+		<servlet-name>ResourceServlet</servlet-name>
+		<servlet-class>com.fatuhiva.common.web.servlet.ResourceServlet</servlet-class>
+	</servlet>
+
+
+	<!-- Web Interface Servlets -->
+
+	<servlet>
+		<description></description>
+		<display-name>PageServlet</display-name>
+		<servlet-name>PageServlet</servlet-name>
+		<servlet-class>com.fatuhiva.ext.web.servlet.PageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>OpenServlets</display-name>
+		<servlet-name>OpenServlet</servlet-name>
+		<servlet-class>com.fatuhiva.ext.web.servlet.OpenServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>RenderServlet</display-name>
+		<servlet-name>RenderServlet</servlet-name>
+		<servlet-class>com.fatuhiva.ext.web.servlet.RenderServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description></description>
+		<display-name>ActionServlet</display-name>
+		<servlet-name>ActionServlet</servlet-name>
+		<servlet-class>com.fatuhiva.ext.web.servlet.ActionServlet</servlet-class>
+	</servlet>
+
+	<!-- Mobile Interface Servlets -->
+	<servlet>
+		<description></description>
+		<display-name>MobilePageServlet</display-name>
+		<servlet-name>MobilePageServlet</servlet-name>
+		<servlet-class>com.fatuhiva.touch.web.servlet.MobilePageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>MobileOpenServlet</display-name>
+		<servlet-name>MobileOpenServlet</servlet-name>
+		<servlet-class>com.fatuhiva.touch.web.servlet.MobileOpenServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>MobileRenderServlet</display-name>
+		<servlet-name>MobileRenderServlet</servlet-name>
+		<servlet-class>com.fatuhiva.touch.web.servlet.MobileRenderServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>MobileActionServlet</display-name>
+		<servlet-name>MobileActionServlet</servlet-name>
+		<servlet-class>com.fatuhiva.touch.web.servlet.MobileActionServlet</servlet-class>
+	</servlet>
+
+
+	<!-- Web Interface Servlets -->
+	<servlet-mapping>
+		<servlet-name>PageServlet</servlet-name>
+		<url-pattern>/Page/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>OpenServlet</servlet-name>
+		<url-pattern>/Open/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RenderServlet</servlet-name>
+		<url-pattern>/Render/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ActionServlet</servlet-name>
+		<url-pattern>/action/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Mobile Interface Servlets -->
+	<servlet-mapping>
+		<servlet-name>MobilePageServlet</servlet-name>
+		<url-pattern>/m/Page/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MobileOpenServlet</servlet-name>
+		<url-pattern>/m/Open/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MobileRenderServlet</servlet-name>
+		<url-pattern>/m/Render/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MobileActionServlet</servlet-name>
+		<url-pattern>/m/action/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ResourceServlet</servlet-name>
+		<url-pattern>/resource/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResourceServlet</servlet-name>
+		<url-pattern>/m/resource/*</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>

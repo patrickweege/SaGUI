@@ -1,0 +1,93 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type='text/javascript'
+	src='resources/ext-4.0.7-gpl/ext-all-debug.js'></script>
+<link rel='stylesheet'
+	href='resources/ext-4.0.7-gpl/resources/css/ext-all.css'
+	type='text/css' />
+<title id='the-title'>Page Template</title>
+</head>
+<body id='ext-content'>
+
+	<a onclick="javascript:addItem()" href="#">add item</a>
+
+
+	<script type='text/javascript'>
+	
+	Ext.require(['Ext.*']);
+	Ext.onReady(function(){
+		Ext.QuickTips.init();
+		Ext.create('Ext.container.Viewport', {
+			//layout : 'fit',
+			items : [new Ext.panel.Panel({
+				title: 'teste',
+				html : 'testesssss<br>'
+			}),new Ext.panel.Panel({
+				title: 'teste 2',
+				html : 'testesssss<br>'
+			})]
+		});
+	});
+
+	
+	Ext.create('Ext.container.Viewport', {
+		id : '84140bf4-c539-4923-bf15-8ecf94a01908'
+		,layout : 'auto'
+		,items : [
+			id : '8a08b875-669e-4f29-8fe3-3553c6db4894'
+			id : '51a319f3-935a-4b53-af56-f1080489c493'
+			id : '387c0aea-6a9c-4c77-acc2-5fe47b507579'
+			id : 'dadcabf7-dd2c-47ed-8ecb-7517f63a9430'
+				]});});
+	
+	
+	/**
+		Ext.require([ 'Ext.*' ]);
+		Ext.onReady(function(){
+			Ext.create('Ext.container.Viewport', {
+			    layout: 'border',
+			    items: [{
+			        region: 'north',
+			        html: '<h1 class="x-panel-header">Page Title</h1>',
+			        border: false,
+			        margins: '0 0 5 0'
+			    }, {
+			        region: 'west',
+			        collapsible: true,
+			        title: 'Navigation',
+			        width: 150
+			        // could use a TreePanel or AccordionLayout for navigational items
+			    }, {
+			        region: 'south',
+			        title: 'South Panel',
+			        collapsible: true,
+			        html: 'Information goes here',
+			        split: true,
+			        height: 100,
+			        minHeight: 100
+			    }, {
+			        region: 'east',
+			        title: 'East Panel',
+			        collapsible: true,
+			        split: true,
+			        width: 150
+			    }, {
+			        region: 'center',
+			        xtype: 'tabpanel', // TabPanel itself has no title
+			        activeTab: 0,      // First tab active by default
+			        items: {
+			            title: 'Default Tab',
+			            html: 'The first tab\'s content. Others may be added dynamically'
+			        }
+			    }]
+			});
+		});
+		*/
+
+		
+	</script>
+</body>
+</html>

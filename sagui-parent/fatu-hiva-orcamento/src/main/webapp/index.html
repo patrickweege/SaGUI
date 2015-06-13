@@ -1,0 +1,376 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel='stylesheet' href='resource/ext-4.2.1.883/resources/css/ext-all-neptune.css' type='text/css' />
+<script type='text/javascript' src='resource/ext-4.2.1.883/ext-all-debug.js'></script>
+<script type='text/javascript' src='resource/ext-4.2.1.883/ext-theme-neptune.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/commons.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/Fatuhiva.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/FatuhivaComboBoxSelectionListener.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/FatuhivaTextBoxOnBlurListener.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/FatuhivaButtonClickListener.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/action/FatuhivaBaseAction.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/action/FatuhivaRefreshAction.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/action/FatuhivaRequestAction.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/gridpanel/FatuhivaDataStoreListeners.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/gridpanel/FatuhivaSelectionModelListeners.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/gridpanel/FatuhivaCheckboxSelectionModel.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/gridpanel/FatuhivaGridPanel.js'></script>
+<script type='text/javascript' src='resource/javascript/fatuhiva/gridpanel/FatuhivaDataStore.js'></script>
+<title id='the-title'>Page Template</title>
+</head>
+<body id='ext-content'>
+<script type='text/javascript'>
+Ext.require(['Ext.*']);
+Ext.onReady(function(){
+Ext.QuickTips.init();
+Ext.create('Ext.container.Viewport', {
+      id : 'dfffab1c-d424-4ff1-95dd-1510ff248b2e'
+      ,layout : 'fit'
+      ,items : [
+         new Ext.panel.Panel({
+            id : '453026a5-f663-4e8d-8f10-b2e57d8665f4'
+            ,title : ''
+            ,layout : 'border'
+            ,items : [
+               new Ext.panel.Panel({
+                  id : '371db64d-2426-4ed9-8071-aa9794d6ea39'
+                  ,title : 'Login...'
+                  ,border : false
+                  ,collapsible : false
+                  ,autoScrool : false
+                  ,padding : '10 10 10 10'
+                  ,region : 'north'
+                  ,split : false
+                  ,layout : {
+                     type : 'vbox'
+                     ,align : 'left'
+                     ,pack : 'start'
+                  ,}
+                  ,items : [
+                     new Ext.panel.Panel({
+                        id : '7302535d-ea6f-4b9b-a63b-8fc6e45f995e'
+                        ,border : false
+                        ,collapsible : false
+                        ,autoScrool : false
+                        ,layout : {
+                           type : 'hbox'
+                           ,align : 'top'
+                           ,pack : 'start'
+                        ,}
+                        ,items : [
+                           new Ext.form.TextField({
+                              id : '4faa7564-c328-4b72-8e9b-fdc8777971d4'
+                              ,value : ''
+                              ,fieldLabel : 'Planilha do Google'
+                              ,labelWidth : 150
+                              ,labelAlign : 'left'
+                              ,disabled : false
+                              ,hidden : false
+                              ,margin : '1 1 1 1'
+                              ,width : 400
+                              ,listeners : {
+                                 blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','4faa7564-c328-4b72-8e9b-fdc8777971d4').execute
+                              }
+                           })
+                           ,new Ext.Button({
+                              id : 'b0a4cd11-d3ea-4c9b-b5db-141dccd91e0d'
+                              ,text : 'Obter URL...'
+                              ,disabled : true
+                              ,hidden : false
+                              ,margin : '1 1 1 5'
+                              ,handler : new FatuhivaButtonClickListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','b0a4cd11-d3ea-4c9b-b5db-141dccd91e0d').execute
+                           })
+                        ]
+                     })
+                     ,new Ext.panel.Panel({
+                        id : 'f2726ff3-8364-436b-b8d4-1291fc0fe435'
+                        ,border : false
+                        ,collapsible : false
+                        ,autoScrool : false
+                        ,layout : {
+                           type : 'hbox'
+                           ,align : 'top'
+                           ,pack : 'start'
+                        ,}
+                        ,items : [
+                           new Ext.form.TextField({
+                              id : '0d67bdb5-afe5-4264-bc39-37a176723a0d'
+                              ,value : ''
+                              ,fieldLabel : 'URL Para Autenticação'
+                              ,labelWidth : 150
+                              ,labelAlign : 'left'
+                              ,disabled : true
+                              ,hidden : false
+                              ,margin : '1 1 1 1'
+                              ,width : 800
+                              ,listeners : {
+                                 blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','0d67bdb5-afe5-4264-bc39-37a176723a0d').execute
+                              }
+                           })
+                        ]
+                     })
+                     ,new Ext.panel.Panel({
+                        id : 'f2aef8af-9a9b-4431-9bf8-a25b2294adfc'
+                        ,border : false
+                        ,collapsible : false
+                        ,autoScrool : false
+                        ,layout : {
+                           type : 'hbox'
+                           ,align : 'top'
+                           ,pack : 'start'
+                        ,}
+                        ,items : [
+                           new Ext.form.TextField({
+                              id : 'c5a1f164-ac0e-4bdc-9a2c-2d586ad39b37'
+                              ,value : ''
+                              ,fieldLabel : 'Token'
+                              ,labelWidth : 150
+                              ,labelAlign : 'left'
+                              ,disabled : true
+                              ,hidden : false
+                              ,margin : '1 1 1 1'
+                              ,width : 800
+                              ,listeners : {
+                                 blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','c5a1f164-ac0e-4bdc-9a2c-2d586ad39b37').execute
+                              }
+                           })
+                        ]
+                     })
+                     ,new Ext.panel.Panel({
+                        id : '7568fdda-791d-460b-8466-14eb0ff9419c'
+                        ,border : false
+                        ,collapsible : false
+                        ,autoScrool : false
+                        ,layout : {
+                           type : 'hbox'
+                           ,align : 'top'
+                           ,pack : 'start'
+                        ,}
+                        ,items : [
+                           new Ext.Button({
+                              id : '58425002-43c1-43ca-b0ea-9f6876311270'
+                              ,text : 'Conectar...'
+                              ,disabled : true
+                              ,hidden : false
+                              ,handler : new FatuhivaButtonClickListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','58425002-43c1-43ca-b0ea-9f6876311270').execute
+                           })
+                           ,new Ext.Button({
+                              id : '4fc43adf-9440-48d1-b67f-3ffd163dd5b3'
+                              ,text : 'Desconectar...'
+                              ,disabled : true
+                              ,hidden : false
+                              ,margin : '1 1 1 5'
+                              ,handler : new FatuhivaButtonClickListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','4fc43adf-9440-48d1-b67f-3ffd163dd5b3').execute
+                           })
+                        ]
+                     })
+                  ]
+               })
+               ,new Ext.tab.Panel({
+                  id : 'cc08c708-4760-411c-ad23-a32e4f4d0ef7'
+                  ,region : 'center'
+                  ,split : false
+                  ,items : [
+                     new Ext.panel.Panel({
+                        id : 'a87569fa-ceb2-4f7f-a7e7-3d3efc5f1ad8'
+                        ,title : 'Or&ccedil;amento'
+                        ,width : 300,height : 300
+                        ,border : false
+                        ,collapsible : false
+                        ,autoScrool : false
+                        ,layout : {
+                           type : 'vbox'
+                           ,align : 'stretch'
+                           ,pack : 'start'
+                        ,}
+                        ,items : [
+                           new Ext.form.FieldSet({
+                              id : '3a160b2b-1d82-4773-a459-59a57d74f478'
+                              ,title : 'Entrada de Dados'
+                              ,layout : {
+                                 type : 'hbox'
+                                 ,align : 'bottom'
+                                 ,pack : 'start'
+                              ,}
+                              ,width : 200
+                              ,items : [
+                                 new Ext.form.TextField({
+                                    id : '6c745d5e-d626-45cb-89b8-f8be6134fa7c'
+                                    ,value : ''
+                                    ,fieldLabel : 'Realizado'
+                                    ,labelAlign : 'top'
+                                    ,disabled : true
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','6c745d5e-d626-45cb-89b8-f8be6134fa7c').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '8ef46361-6683-4229-a669-44fca945b300'
+                                    ,value : ''
+                                    ,fieldLabel : 'Previsto'
+                                    ,labelAlign : 'top'
+                                    ,disabled : true
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','8ef46361-6683-4229-a669-44fca945b300').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '390fec7f-4697-47c1-8f42-746c6cee41b4'
+                                    ,value : ''
+                                    ,fieldLabel : 'Conta D&#65533;bito'
+                                    ,labelAlign : 'top'
+                                    ,disabled : true
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','390fec7f-4697-47c1-8f42-746c6cee41b4').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '6226f626-1459-4f05-923a-3ec773d8b077'
+                                    ,value : ''
+                                    ,fieldLabel : 'Conta Cr&#65533;dito'
+                                    ,labelAlign : 'top'
+                                    ,disabled : true
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','6226f626-1459-4f05-923a-3ec773d8b077').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '6220562d-3d68-4406-afa8-1fb5dd941346'
+                                    ,value : ''
+                                    ,fieldLabel : 'Centro Custo'
+                                    ,labelAlign : 'top'
+                                    ,disabled : true
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','6220562d-3d68-4406-afa8-1fb5dd941346').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '0fe87554-ebed-445f-a110-61e0c997956a'
+                                    ,value : ''
+                                    ,fieldLabel : 'Valor'
+                                    ,labelAlign : 'top'
+                                    ,disabled : true
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','0fe87554-ebed-445f-a110-61e0c997956a').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '078f096d-6ad3-480c-9d56-1f03e47ade3d'
+                                    ,value : ''
+                                    ,fieldLabel : 'Observa&#65533;&#65533;o'
+                                    ,labelAlign : 'top'
+                                    ,disabled : true
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','078f096d-6ad3-480c-9d56-1f03e47ade3d').execute
+                                    }
+                                 })
+                                 ,new Ext.Button({
+                                    id : '0d5c1630-6c0f-4a82-bb0f-d5411513a303'
+                                    ,text : 'Novo...'
+                                    ,disabled : false
+                                    ,hidden : false
+                                    ,handler : new FatuhivaButtonClickListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','0d5c1630-6c0f-4a82-bb0f-d5411513a303').execute
+                                 })
+                              ]
+                           })
+                           ,new Ext.form.FieldSet({
+                              id : '07113254-3f59-49c5-8ead-7257b2240e55'
+                              ,title : 'Filtros'
+                              ,layout : {
+                                 type : 'hbox'
+                                 ,align : 'top'
+                                 ,pack : 'start'
+                                 ,padding : '10 10 10 10'
+                              }
+                              ,items : [
+                                 new Ext.form.TextField({
+                                    id : '4e20a95f-d334-415d-9980-6088386f2b92'
+                                    ,value : ''
+                                    ,fieldLabel : 'Data'
+                                    ,labelAlign : 'top'
+                                    ,disabled : false
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','4e20a95f-d334-415d-9980-6088386f2b92').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '1adea813-e65d-4ef9-8883-97b8b5e20230'
+                                    ,value : ''
+                                    ,fieldLabel : 'Conta'
+                                    ,labelAlign : 'top'
+                                    ,disabled : false
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','1adea813-e65d-4ef9-8883-97b8b5e20230').execute
+                                    }
+                                 })
+                                 ,new Ext.form.TextField({
+                                    id : '4fb848c0-df98-4912-99eb-85a8a1a00dc2'
+                                    ,value : ''
+                                    ,fieldLabel : 'Centro Custo'
+                                    ,labelAlign : 'top'
+                                    ,disabled : false
+                                    ,hidden : false
+                                    ,margin : '1 1 1 1'
+                                    ,listeners : {
+                                       blur : new FatuhivaTextBoxOnBlurListener('dfffab1c-d424-4ff1-95dd-1510ff248b2e','4fb848c0-df98-4912-99eb-85a8a1a00dc2').execute
+                                    }
+                                 })
+                              ]
+                           })
+                           ,new Ext.panel.Panel({
+                              id : '5b32ab14-174d-4935-8db6-7db53ba64fd5'
+                              ,title : 'Dados'
+                              ,border : false
+                              ,collapsible : false
+                              ,autoScrool : false
+                              ,layout : 'fit'
+                              ,items : [
+                                 new Fatuhiva.grid.Panel({
+                                    id : '4ca0224d-c5e9-4aa5-950d-e741a71ff3e1'
+                                    ,pageID : 'dfffab1c-d424-4ff1-95dd-1510ff248b2e'
+                                    ,columns : [{"dataIndex":"dataRealizado","text":"dataRealizado"},{"dataIndex":"dataPrevisto","text":"dataPrevisto"},{"dataIndex":"contaCredito","text":"contaCredito"},{"dataIndex":"contaDebito","text":"contaDebito"},{"dataIndex":"centroCusto","text":"centroCusto"},{"dataIndex":"valor","text":"valor"},{"dataIndex":"observacao","flex":1,"text":"observacao"}]
+                                    ,fatuModelConfig : {
+                                       fields : ["id","dataRealizado","dataPrevisto","contaCredito","contaDebito","centroCusto","valor","observacao","__fatuhiva_rowMetadata"]
+                                       ,idProperty : '2'
+                                    }
+                                 })
+                              ]
+                           })
+                        ]
+                     })
+                     ,new Ext.panel.Panel({
+                        id : 'deafcfa1-7a47-47ce-b433-c60cb75ec254'
+                        ,title : 'Outra Tab'
+                        ,border : false
+                        ,collapsible : false
+                        ,autoScrool : false
+                        ,layout : 'fit'
+                     })
+                  ]
+               })
+            ]
+         })
+      ]
+   });});
+</script>
+</body>
+</html>
