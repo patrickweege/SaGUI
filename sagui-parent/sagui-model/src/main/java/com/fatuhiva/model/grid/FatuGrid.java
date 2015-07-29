@@ -10,7 +10,7 @@ import com.fatuhiva.model.feature.IFatuSizeFeature;
 import com.fatuhiva.model.feature.IFatuTableModelFeature;
 import com.fatuhiva.model.selection.FatuSimpleSelectionModel;
 import com.fatuhiva.model.selection.IFatuSelectionModel;
-import com.tuamotu.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.dataset.IBookmark;
 
 public class FatuGrid extends FatuComponent implements IFatuSizeFeature, IFatuColumnModelFeature, IFatuTableModelFeature, IFatuSelectionFeature {
 

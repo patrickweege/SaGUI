@@ -16,7 +16,7 @@ import com.fatuhiva.model.feature.IFatuHintFeature;
 import com.fatuhiva.model.feature.IFatuLabelFeature;
 import com.fatuhiva.model.feature.IFatuMarginFeature;
 import com.fatuhiva.model.feature.IFatuVisibleFeature;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public class FatuButton extends FatuComponent implements IFatuHintFeature, IFatuLabelFeature, IFatuActionListenerFeature, IFatuEnabledFeature, IFatuVisibleFeature, IFatuMarginFeature {
 

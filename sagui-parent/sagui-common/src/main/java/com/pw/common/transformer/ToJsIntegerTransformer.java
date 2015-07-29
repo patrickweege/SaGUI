@@ -2,7 +2,7 @@ package com.pw.common.transformer;
 
 import org.apache.commons.collections.Transformer;
 
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public class ToJsIntegerTransformer implements Transformer {
 

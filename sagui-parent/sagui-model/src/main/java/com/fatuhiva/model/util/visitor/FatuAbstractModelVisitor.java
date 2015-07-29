@@ -8,8 +8,8 @@ import org.apache.commons.collections4.Predicate;
 
 import com.fatuhiva.model.FatuComponent;
 import com.fatuhiva.model.FatuContainer;
-import com.tuamotu.commons.visitor.PredicatedHierarchicalVisitor;
-import com.tuamotu.commons.visitor.VisitorDirection;
+import com.sagui.dataset.commons.visitor.PredicatedHierarchicalVisitor;
+import com.sagui.dataset.commons.visitor.VisitorDirection;
 
 public class FatuAbstractModelVisitor extends PredicatedHierarchicalVisitor<FatuComponent> {
 

@@ -8,16 +8,16 @@ import com.fatuhiva.model.datamodel.FatuTableModelEvent;
 import com.fatuhiva.model.datamodel.IFatuTableModel;
 import com.fatuhiva.model.selection.IFatuSelectionListener;
 import com.fatuhiva.model.selection.IFatuSelectionModel;
-import com.tuamotu.commons.comparator.BeanComparatorUtil;
-import com.tuamotu.commons.comparator.IBeanComparator;
-import com.tuamotu.commons.comparator.IBeanComparator.Order;
-import com.tuamotu.commons.comparator.IFieldComparatorMetadata;
-import com.tuamotu.commons.dataset.Dataset;
-import com.tuamotu.commons.dataset.DatasetIndex;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.dataset.IDataset;
-import com.tuamotu.commons.dataset.IDatasetField;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.comparator.BeanComparatorUtil;
+import com.sagui.dataset.commons.comparator.IBeanComparator;
+import com.sagui.dataset.commons.comparator.IFieldComparatorMetadata;
+import com.sagui.dataset.commons.comparator.IBeanComparator.Order;
+import com.sagui.dataset.commons.dataset.Dataset;
+import com.sagui.dataset.commons.dataset.DatasetIndex;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.dataset.IDataset;
+import com.sagui.dataset.commons.dataset.IDatasetField;
+import com.sagui.dataset.commons.field.IField;
 
 public class FatuMasterDetailTableModel<M, D> extends FatuAbstractTableModel<D> implements IFatuTableModel<D>, IFatuSelectionListener<IBookmark<M>> {
 

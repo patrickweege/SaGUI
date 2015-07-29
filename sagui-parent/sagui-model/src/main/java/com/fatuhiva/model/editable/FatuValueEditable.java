@@ -8,7 +8,7 @@ import org.apache.commons.collections.ComparatorUtils;
 import org.apache.commons.collections.comparators.ComparableComparator;
 
 import com.fatuhiva.model.datasource.FatuAbstractDataSource;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 @SuppressWarnings("unchecked")
 public abstract class FatuValueEditable<V> extends FatuEditable {

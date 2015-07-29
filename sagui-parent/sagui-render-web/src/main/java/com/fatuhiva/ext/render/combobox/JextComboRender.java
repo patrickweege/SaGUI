@@ -11,7 +11,7 @@ import com.fatuhiva.ext.render.generic.JextLabelableFeatureRender;
 import com.fatuhiva.ext.render.generic.JextListenersRender;
 import com.fatuhiva.model.list.IFatuListModel;
 import com.fatuhiva.model.list.combo.editable.FatuComboBox;
-import com.tuamotu.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.dataset.IBookmark;
 
 @SuppressWarnings("rawtypes")
 public class JextComboRender extends FatuAbstractRender<FatuComboBox> {

@@ -11,7 +11,7 @@ import com.fatuhiva.model.layout.box.FatuVBoxLayout;
 import com.fatuhiva.model.layout.box.FatuVBoxLayoutRule;
 import com.fatuhiva.model.layout.fit.FatuFitLayout;
 import com.fatuhiva.model.layout.fit.FatuFitLayoutRule;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public class TabPanelTestPage extends FatuPage<FatuFitLayout> {
 

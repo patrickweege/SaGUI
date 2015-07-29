@@ -23,8 +23,8 @@ import com.fatuhiva.model.layout.fit.FatuFitLayout;
 import com.fatuhiva.model.layout.fit.FatuFitLayoutRule;
 import com.fatuhiva.model.selection.IFatuSelectionListener;
 import com.fatuhiva.model.selection.IFatuSelectionModel;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public abstract class FatuAbstractCrudPanel<M> extends FatuPanel<FatuBorderLayout> {
 

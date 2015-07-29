@@ -11,8 +11,8 @@ import com.fatuhiva.model.feature.FatuSize;
 import com.fatuhiva.model.label.FatuLabel;
 import com.fatuhiva.model.layout.table.FatuTableLayout;
 import com.fatuhiva.model.layout.table.FatuTableLayoutRule;
-import com.tuamotu.commons.i18n.CurrentLanguageResolver;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.CurrentLanguageResolver;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public class ChangeChildrenTestForm extends FatuForm<FatuTableLayout> {
 	

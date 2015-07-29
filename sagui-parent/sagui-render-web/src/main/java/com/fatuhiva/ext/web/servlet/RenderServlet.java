@@ -23,8 +23,8 @@ import com.fatuhiva.ext.web.JextWebUtil;
 import com.fatuhiva.model.container.page.FatuPage;
 import com.fatuhiva.model.util.FatuPageManager;
 import com.pw.common.JextContext;
-import com.tuamotu.commons.log.FatuLoggerFactory;
-import com.tuamotu.commons.util.Resources;
+import com.sagui.dataset.commons.log.FatuLoggerFactory;
+import com.sagui.dataset.commons.util.Resources;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

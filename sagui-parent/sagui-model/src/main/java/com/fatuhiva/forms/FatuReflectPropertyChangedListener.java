@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.reflect.MethodUtils;
 
 import com.fatuhiva.model.FatuComponent;
-import com.tuamotu.commons.util.AnnotationUtils;
+import com.sagui.dataset.commons.util.AnnotationUtils;
 
 public class FatuReflectPropertyChangedListener implements PropertyChangeListener {
 

@@ -14,8 +14,8 @@ import com.fatuhiva.model.datasource.FatuAbstractDataSource;
 import com.fatuhiva.model.datasource.FatuRowIndexDataModelDataSource;
 import com.fatuhiva.model.editable.editbox.FatuTextBox;
 import com.fatuhiva.model.editable.list.checkbox.FatuCheckbox;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.field.IField;
 
 public class EmployeeTabularTestForm extends FatuAbstractTabularForm {
 

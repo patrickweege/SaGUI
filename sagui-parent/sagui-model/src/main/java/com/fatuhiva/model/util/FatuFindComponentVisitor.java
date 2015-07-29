@@ -10,8 +10,8 @@ import org.apache.commons.lang.StringUtils;
 import com.fatuhiva.model.FatuComponent;
 import com.fatuhiva.model.FatuContainer;
 import com.fatuhiva.model.container.panel.FatuPanel;
-import com.tuamotu.commons.visitor.HierarchicalVisitor;
-import com.tuamotu.commons.visitor.VisitorDirection;
+import com.sagui.dataset.commons.visitor.HierarchicalVisitor;
+import com.sagui.dataset.commons.visitor.VisitorDirection;
 
 @SuppressWarnings("unchecked")
 public class FatuFindComponentVisitor<T extends FatuComponent> extends HierarchicalVisitor<T> {

@@ -5,8 +5,8 @@ import java.util.List;
 
 import javax.swing.event.EventListenerList;
 
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.field.IField;
 
 public abstract class FatuAbstractTableModel<T> implements IFatuTableModel<T> {
 

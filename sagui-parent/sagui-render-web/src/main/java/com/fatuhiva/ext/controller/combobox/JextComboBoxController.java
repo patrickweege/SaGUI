@@ -12,9 +12,9 @@ import com.fatuhiva.model.list.IFatuListModel;
 import com.fatuhiva.model.list.combo.editable.FatuComboBox;
 import com.fatuhiva.model.selection.IFatuSelectionModel;
 import com.pw.common.transformer.ToCollectionTransformer;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.i18n.CurrentLanguageResolver;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.i18n.CurrentLanguageResolver;
+import com.sagui.dataset.commons.i18n.I18n;
 
 @SuppressWarnings("rawtypes")
 public class JextComboBoxController implements IJextController<FatuComboBox> {

@@ -1,6 +1,6 @@
 package com.fatuhiva.model.datasource;
 
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.field.IField;
 
 @SuppressWarnings("unchecked")
 public class FatuBeanDataSource<BEAN, V> extends FatuAbstractDataSource<V> {

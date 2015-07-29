@@ -3,10 +3,10 @@ package com.fatuhiva.model.datamodel;
 import java.util.Collection;
 import java.util.Collections;
 
-import com.tuamotu.commons.dataset.DatasetIndex;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.dataset.IDataset;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.dataset.DatasetIndex;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.dataset.IDataset;
+import com.sagui.dataset.commons.field.IField;
 
 public abstract class FatuAbstractDatasetTableModel<T> extends FatuAbstractTableModel<T> implements IFatuTableModel<T> {
 

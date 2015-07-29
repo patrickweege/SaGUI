@@ -1,7 +1,7 @@
 package com.fatuhiva.model.label;
 
 import com.fatuhiva.model.FatuComponent;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public class FatuLabel extends FatuComponent {
 

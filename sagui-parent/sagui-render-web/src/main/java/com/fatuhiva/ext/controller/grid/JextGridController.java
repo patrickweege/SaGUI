@@ -12,7 +12,7 @@ import com.fatuhiva.model.datamodel.IFatuTableModel;
 import com.fatuhiva.model.grid.FatuGrid;
 import com.fatuhiva.model.selection.IFatuSelectionModel;
 import com.pw.common.transformer.ToCollectionTransformer;
-import com.tuamotu.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.dataset.IBookmark;
 
 public class JextGridController implements IJextController<FatuGrid> {
 

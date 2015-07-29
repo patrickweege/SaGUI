@@ -4,7 +4,7 @@ import com.fatuhiva.model.FatuElement;
 import com.fatuhiva.model.list.IFatuListModel;
 import com.fatuhiva.model.list.editable.impl.FatuAbstractListComponent;
 import com.fatuhiva.model.selection.IFatuSelectionModel;
-import com.tuamotu.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.dataset.IBookmark;
 
 
 public class FatuComboBox<T extends FatuElement> extends FatuAbstractListComponent<T> {

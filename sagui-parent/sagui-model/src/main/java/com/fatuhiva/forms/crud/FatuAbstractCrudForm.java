@@ -17,8 +17,8 @@ import com.fatuhiva.model.layout.auto.FatuAutoLayout;
 import com.fatuhiva.model.layout.auto.FatuAutoLayoutRule;
 import com.fatuhiva.model.layout.border.FatuBorderLayout;
 import com.fatuhiva.model.layout.border.FatuBorderLayoutRule;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public abstract class FatuAbstractCrudForm<M> extends FatuForm<FatuBorderLayout> {
 

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
 
-import com.tuamotu.commons.util.Resources;
+import com.sagui.dataset.commons.util.Resources;
 
 /**
  * Servlet implementation class PageServlet

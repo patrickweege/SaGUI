@@ -12,7 +12,7 @@ import com.fatuhiva.model.FatuComponent;
 import com.fatuhiva.model.datamodel.IFatuCellRender;
 import com.fatuhiva.model.datamodel.IFatuColumnModel;
 import com.fatuhiva.model.datamodel.IFatuTableModel;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.field.IField;
 
 class FatuFieldColumnModel implements IFatuColumnModel {
 

@@ -1,6 +1,6 @@
 package com.fatuhiva.model.feature;
 
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public interface IFatuErrorMsgFeature {
 

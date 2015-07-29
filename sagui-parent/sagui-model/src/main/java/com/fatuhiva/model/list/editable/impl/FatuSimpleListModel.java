@@ -5,15 +5,15 @@ import java.util.Collection;
 import com.fatuhiva.model.FatuElement;
 import com.fatuhiva.model.datamodel.FatuAbstractDatasetTableModel;
 import com.fatuhiva.model.list.IFatuListModel;
-import com.tuamotu.commons.comparator.BeanComparatorUtil;
-import com.tuamotu.commons.comparator.IBeanComparator;
-import com.tuamotu.commons.comparator.IBeanComparator.Order;
-import com.tuamotu.commons.comparator.IFieldComparatorMetadata;
-import com.tuamotu.commons.dataset.Dataset;
-import com.tuamotu.commons.dataset.DatasetIndex;
-import com.tuamotu.commons.dataset.IDataset;
-import com.tuamotu.commons.field.AbstractField;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.comparator.BeanComparatorUtil;
+import com.sagui.dataset.commons.comparator.IBeanComparator;
+import com.sagui.dataset.commons.comparator.IFieldComparatorMetadata;
+import com.sagui.dataset.commons.comparator.IBeanComparator.Order;
+import com.sagui.dataset.commons.dataset.Dataset;
+import com.sagui.dataset.commons.dataset.DatasetIndex;
+import com.sagui.dataset.commons.dataset.IDataset;
+import com.sagui.dataset.commons.field.AbstractField;
+import com.sagui.dataset.commons.field.IField;
 
 @SuppressWarnings("unchecked")
 public class FatuSimpleListModel<T extends FatuElement> extends FatuAbstractDatasetTableModel<T> implements IFatuListModel<T> {

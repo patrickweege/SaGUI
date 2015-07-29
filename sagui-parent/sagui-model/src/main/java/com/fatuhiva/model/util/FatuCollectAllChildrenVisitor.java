@@ -7,8 +7,8 @@ import java.util.List;
 
 import com.fatuhiva.model.FatuComponent;
 import com.fatuhiva.model.FatuContainer;
-import com.tuamotu.commons.visitor.HierarchicalVisitor;
-import com.tuamotu.commons.visitor.VisitorDirection;
+import com.sagui.dataset.commons.visitor.HierarchicalVisitor;
+import com.sagui.dataset.commons.visitor.VisitorDirection;
 
 public class FatuCollectAllChildrenVisitor extends HierarchicalVisitor<FatuComponent> {
 

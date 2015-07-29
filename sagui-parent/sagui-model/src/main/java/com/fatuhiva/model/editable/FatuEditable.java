@@ -11,7 +11,7 @@ import com.fatuhiva.model.feature.IFatuLabelableFeature;
 import com.fatuhiva.model.feature.IFatuMarginFeature;
 import com.fatuhiva.model.feature.IFatuSizeFeature;
 import com.fatuhiva.model.feature.IFatuVisibleFeature;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public abstract class FatuEditable extends FatuComponent implements IFatuErrorMsgFeature, IFatuSizeFeature, IFatuLabelableFeature, IFatuEnabledFeature, IFatuVisibleFeature, IFatuMarginFeature {
 

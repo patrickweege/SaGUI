@@ -12,7 +12,7 @@ import com.fatuhiva.ext.common.render.RenderException;
 import com.fatuhiva.ext.common.render.util.ColorHexConverter;
 import com.fatuhiva.ext.common.render.util.RenderWriter;
 import com.fatuhiva.ext.controller.grid.GridGetdataActionResult;
-import com.tuamotu.commons.log.FatuLoggerFactory;
+import com.sagui.dataset.commons.log.FatuLoggerFactory;
 
 public class GetdataResultRender implements IRender<GridGetdataActionResult> {
 

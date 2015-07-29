@@ -10,7 +10,7 @@ import com.fatuhiva.model.feature.FatuSize;
 import com.fatuhiva.model.layout.auto.FatuAutoLayout;
 import com.fatuhiva.model.layout.auto.FatuAutoLayoutRule;
 import com.fatuhiva.model.layout.border.FatuBorderLayout;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 /**
  *  test.com.jext.model.pages.ToolbarTestPage
  * @author F0FP250

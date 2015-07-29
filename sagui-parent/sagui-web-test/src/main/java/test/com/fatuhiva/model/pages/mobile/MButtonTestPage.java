@@ -9,7 +9,7 @@ import com.fatuhiva.model.feature.FatuSize;
 import com.fatuhiva.model.label.FatuLabel;
 import com.fatuhiva.model.layout.auto.FatuAutoLayout;
 import com.fatuhiva.model.layout.auto.FatuAutoLayoutRule;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.I18n;
 
 public class MButtonTestPage extends FatuPage<FatuAutoLayout> {
 

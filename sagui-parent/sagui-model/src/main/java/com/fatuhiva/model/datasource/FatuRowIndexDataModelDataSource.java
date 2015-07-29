@@ -3,8 +3,8 @@ package com.fatuhiva.model.datasource;
 import com.fatuhiva.model.datamodel.FatuTableModelEvent;
 import com.fatuhiva.model.datamodel.IFatuTableModel;
 import com.fatuhiva.model.datamodel.IFatuTableModelListener;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.field.IField;
 
 @SuppressWarnings("unchecked")
 public class FatuRowIndexDataModelDataSource<BEAN, V> extends FatuAbstractDataSource<V> implements IFatuTableModelListener {

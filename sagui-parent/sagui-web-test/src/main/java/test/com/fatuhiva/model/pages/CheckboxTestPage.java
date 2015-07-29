@@ -6,8 +6,8 @@ import com.fatuhiva.model.editable.list.checkbox.FatuCheckbox;
 import com.fatuhiva.model.feature.FatuSize;
 import com.fatuhiva.model.layout.auto.FatuAutoLayout;
 import com.fatuhiva.model.layout.auto.FatuAutoLayoutRule;
-import com.tuamotu.commons.i18n.CurrentLanguageResolver;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.i18n.CurrentLanguageResolver;
+import com.sagui.dataset.commons.i18n.I18n;
 /**
  *  test.com.jext.model.pages.CheckboxTestPage
  * @author F0FP250

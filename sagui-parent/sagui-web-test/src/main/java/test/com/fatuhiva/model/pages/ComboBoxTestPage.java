@@ -19,9 +19,9 @@ import com.fatuhiva.model.list.combo.editable.FatuComboBox;
 import com.fatuhiva.model.list.editable.impl.FatuSimpleListModel;
 import com.fatuhiva.model.selection.FatuSimpleSelectionModel;
 import com.fatuhiva.model.selection.IFatuSelectionListener;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.i18n.CurrentLanguageResolver;
-import com.tuamotu.commons.i18n.I18n;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.i18n.CurrentLanguageResolver;
+import com.sagui.dataset.commons.i18n.I18n;
 
 /**
  * test.com.jext.model.pages.ComboBoxTestPage

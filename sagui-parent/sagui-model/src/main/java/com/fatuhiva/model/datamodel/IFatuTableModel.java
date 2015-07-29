@@ -1,7 +1,7 @@
 package com.fatuhiva.model.datamodel;
 
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.field.IField;
 
 public interface IFatuTableModel<T> {
 

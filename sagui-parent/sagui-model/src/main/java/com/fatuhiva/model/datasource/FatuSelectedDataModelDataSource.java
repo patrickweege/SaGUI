@@ -13,8 +13,8 @@ import com.fatuhiva.model.datamodel.IFatuTableModel;
 import com.fatuhiva.model.datamodel.IFatuTableModelListener;
 import com.fatuhiva.model.selection.IFatuSelectionListener;
 import com.fatuhiva.model.selection.IFatuSelectionModel;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.field.IField;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.dataset.commons.field.IField;
 
 public class FatuSelectedDataModelDataSource<BEAN, V> extends FatuAbstractDataSource<V> implements IFatuTableModelListener, IFatuSelectionListener<IBookmark<BEAN>> {
 
