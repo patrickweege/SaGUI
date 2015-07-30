@@ -20,8 +20,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>jtuamotu</groupId>
-			<artifactId>jtuamotu-dataset</artifactId>
+			<groupId>com.sagui.dataset</groupId>
+			<artifactId>sagui-dataset</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 
