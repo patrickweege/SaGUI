@@ -1,24 +1,24 @@
-package com.fatuhiva.gui.aspects;
+package com.sagui.model;
 
 import java.util.Collection;
 
 import org.slf4j.Logger;
 
-import com.fatuhiva.model.datamodel.FatuTableModelEvent;
-import com.fatuhiva.model.datamodel.IFatuTableModel;
-import com.fatuhiva.model.datamodel.IFatuTableModelListener;
-import com.fatuhiva.model.grid.FatuGrid;
-import com.fatuhiva.model.selection.IFatuSelectionListener;
-import com.fatuhiva.model.selection.IFatuSelectionModel;
-import com.tuamotu.commons.dataset.IBookmark;
-import com.tuamotu.commons.log.FatuLoggerFactory;
+import com.sagui.commons.log.FatuLoggerFactory;
+import com.sagui.dataset.commons.dataset.IBookmark;
+import com.sagui.model.datamodel.FatuTableModelEvent;
+import com.sagui.model.datamodel.IFatuTableModel;
+import com.sagui.model.datamodel.IFatuTableModelListener;
+import com.sagui.model.grid.FatuGrid;
+import com.sagui.model.selection.IFatuSelectionListener;
+import com.sagui.model.selection.IFatuSelectionModel;
 
 public aspect FatuWatchGridAspect {
 
     private static final Logger log = FatuLoggerFactory.create(FatuWatchGridAspect.class);
 
     @SuppressWarnings({ "rawtypes", "unchecked" })
-    after(com.fatuhiva.model.grid.FatuGrid grid) returning: this(grid) && initialization(com.fatuhiva.model.grid.FatuGrid.new(com.fatuhiva.model.datamodel.IFatuTableModel+, com.fatuhiva.model.selection.IFatuSelectionModel+)) {
+    after(com.sagui.model.grid.FatuGrid grid) returning: this(grid) && initialization(com.sagui.model.grid.FatuGrid.new(com.sagui.model.datamodel.IFatuTableModel+, com.sagui.model.selection.IFatuSelectionModel+)) {
         if (log.isTraceEnabled()) log.trace("Intercept new {}(...)", grid.getClass());
         Object[] args = thisJoinPoint.getArgs();
         final FatuGrid theGrid = (FatuGrid) grid;

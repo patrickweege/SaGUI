@@ -1,4 +1,4 @@
-package com.sagui.gui.aspects;
+package com.sagui.model;
 
 import java.beans.PropertyChangeEvent;
 import java.util.List;

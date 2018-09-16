@@ -9,6 +9,7 @@
 	<properties>
 		<project.file.enconding>ISO-8859-1</project.file.enconding>
 		<project.build.sourceEncoding>${project.file.enconding}</project.build.sourceEncoding>
+		<aspectj.version>1.9.1</aspectj.version> <!-- specify your version -->
 	</properties>
 
 	<modules>
