@@ -7,8 +7,8 @@ import java.util.Locale;
 
 import org.apache.commons.lang.ObjectUtils;
 
-import test.com.sagui.model.pages.crud.employee.Employee;
-import test.com.sagui.model.pages.employee.crud.EmployeeDAO;
+import test.com.sagui.model.pages.employee.bean.Employee;
+import test.com.sagui.model.pages.employee.dao.EmployeeDAO;
 
 import com.sagui.dataset.commons.comparator.BeanComparatorUtil;
 import com.sagui.dataset.commons.comparator.IBeanComparator;
@@ -25,7 +25,7 @@ import com.sagui.dataset.commons.field.IField;
 import com.sagui.dataset.commons.i18n.I18n;
 import com.sagui.model.datamodel.impl.FatuDefaultDatasetTableModel;
 
-public class EmployeeDataModel extends FatuDefaultDatasetTableModel<Employee> {
+public class EmployeeTableModel extends FatuDefaultDatasetTableModel<Employee> {
 
     private static final long serialVersionUID = 1L;
 
@@ -41,7 +41,7 @@ public class EmployeeDataModel extends FatuDefaultDatasetTableModel<Employee> {
 
     private final EmployeeDAO employeeDAO;
 
-    public EmployeeDataModel() {
+    public EmployeeTableModel() {
         super(new Dataset<Employee>(), null);
 
         this.employeeDAO = new EmployeeDAO();

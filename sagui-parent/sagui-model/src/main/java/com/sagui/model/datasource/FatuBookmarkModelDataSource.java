@@ -3,6 +3,7 @@ package com.sagui.model.datasource;
 import com.sagui.dataset.commons.dataset.IBookmark;
 import com.sagui.dataset.commons.field.IField;
 import com.sagui.model.datamodel.FatuTableModelEvent;
+import com.sagui.model.datamodel.FatuTableModelEvent.FatuTableModelEventType;
 import com.sagui.model.datamodel.IFatuTableModel;
 import com.sagui.model.datamodel.IFatuTableModelListener;
 
@@ -45,6 +46,10 @@ public class FatuBookmarkModelDataSource<BEAN, V> extends FatuAbstractDataSource
 
     @Override
     public void tableChanged(FatuTableModelEvent evt) {
+    	// When FatuTableModelEventType.DATA_RESET then current becomes invalid
+    	if(evt.getType() == FatuTableModelEventType.DATA_RESET) {
+    		this.current = null;
+    	}
         int rowIndex = current == null ? 0 : tableModel.getRowIndex(current);
         if(evt.getFirstRow() <= rowIndex && evt.getLastRow() >= rowIndex) {
             this.setChanged();

@@ -3,8 +3,6 @@ package test.com.sagui.model.pages;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import test.com.sagui.model.pages.crud.employee.Employee;
-
 import com.sagui.dataset.commons.field.BeanFieldHelper;
 import com.sagui.dataset.commons.field.FormaterField;
 import com.sagui.dataset.commons.field.IField;
@@ -16,6 +14,8 @@ import com.sagui.model.editable.editbox.FatuTextBox;
 import com.sagui.model.feature.FatuSize;
 import com.sagui.model.layout.auto.FatuAutoLayout;
 import com.sagui.model.layout.auto.FatuAutoLayoutRule;
+
+import test.com.sagui.model.pages.employee.bean.Employee;
 
 /**
  * test.com.jext.model.pages.button.EmployeeForm

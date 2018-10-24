@@ -1,4 +1,4 @@
-package test.com.sagui.model.pages.employee.crud;
+package test.com.sagui.model.pages.employee.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import test.com.sagui.model.pages.crud.employee.Employee;
+import test.com.sagui.model.pages.employee.bean.Employee;
 
 public class EmployeeDAO {
 

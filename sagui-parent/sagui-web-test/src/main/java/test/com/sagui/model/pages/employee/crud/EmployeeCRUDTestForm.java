@@ -7,8 +7,9 @@ import java.util.Locale;
 
 import org.apache.commons.lang.math.NumberUtils;
 
-import test.com.sagui.model.pages.crud.employee.Employee;
-import test.com.sagui.model.pages.employee.model.EmployeeDataModel;
+import test.com.sagui.model.pages.employee.bean.Employee;
+import test.com.sagui.model.pages.employee.dao.EmployeeDAO;
+import test.com.sagui.model.pages.employee.model.EmployeeTableModel;
 
 import com.sagui.dataset.commons.dataset.IBookmark;
 import com.sagui.dataset.commons.field.BeanFieldHelper;
@@ -59,7 +60,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
     private final FatuTextBox tBoxSalary;
 
     private final FatuGrid tableEmployee;
-    private final EmployeeDataModel dataModel;
+    private final EmployeeTableModel dataModel;
 
     private final FatuBookmarkModelDataSource<Employee, String> dsEmpID;
     private final FatuBookmarkModelDataSource<Employee, String> dsEmpName;
@@ -89,7 +90,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
         empField = new FormaterField<Employee>(empField, NumberFormat.getNumberInstance());
         this.empSalaryField = new I18nFieldImpl<Employee>("salary", tBoxSalary_I18N, tBoxSalary_I18N, empField);
 
-        this.dataModel = new EmployeeDataModel();
+        this.dataModel = new EmployeeTableModel();
         this.dsEmpID = new FatuBookmarkModelDataSource<Employee, String>(dataModel, null, dataModel.empIDField);
         this.dsEmpID.setEditable(false);
         this.dsEmpName = new FatuBookmarkModelDataSource<Employee, String>(dataModel, null, dataModel.empNameField);
@@ -112,13 +113,13 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
         content.addChild(tBoxSalary, FatuAutoLayoutRule.AUTO_LAYOUT_RULE);
 
         tableEmployee = new FatuGrid(dataModel);
-        tableEmployee.setSize(new FatuSize(300, 400));
+        //tableEmployee.setSize(new FatuSize(300, 400));
         content.addChild(tableEmployee, FatuAutoLayoutRule.AUTO_LAYOUT_RULE);
 
         IFatuSelectionModel<IBookmark<Employee>> selectionModel = tableEmployee.getSelectionModel();
         selectionModel.addSelectionListener(new TableEmployeeSelectionListener());
 
-        this.setSize(new FatuSize(500, 500));
+        //this.setSize(new FatuSize(500, 500));
         
         populate();
 

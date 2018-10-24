@@ -3,8 +3,8 @@ package test.com.sagui.model.pages.employee.tabular;
 import java.util.ArrayList;
 import java.util.List;
 
-import test.com.sagui.model.pages.crud.employee.Employee;
-import test.com.sagui.model.pages.employee.model.EmployeeDataModel;
+import test.com.sagui.model.pages.employee.bean.Employee;
+import test.com.sagui.model.pages.employee.model.EmployeeTableModel;
 
 import com.sagui.dataset.commons.dataset.IBookmark;
 import com.sagui.dataset.commons.field.IField;
@@ -19,10 +19,10 @@ import com.sagui.model.editable.list.checkbox.FatuCheckbox;
 
 public class EmployeeTabularTestForm extends FatuAbstractTabularForm {
 
-    private final EmployeeDataModel dataModel;
+    private final EmployeeTableModel dataModel;
 
     public EmployeeTabularTestForm() {
-        this.dataModel = new EmployeeDataModel();
+        this.dataModel = new EmployeeTableModel();
         this.dataModel.reload();
         super.createUI();
     }

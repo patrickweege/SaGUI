@@ -1,4 +1,4 @@
-package test.com.sagui.model.pages.crud.employee;
+package test.com.sagui.model.pages.employee.bean;
 
 import java.io.Serializable;
 

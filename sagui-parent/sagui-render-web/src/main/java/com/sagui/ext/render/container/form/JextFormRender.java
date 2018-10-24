@@ -7,6 +7,7 @@ import com.sagui.ext.render.container.JextChildrenRender;
 import com.sagui.ext.render.generic.JextSizeFeatureRender;
 import com.sagui.ext.render.generic.JextTitleRender;
 import com.sagui.ext.render.layout.FatuExtLayoutRender;
+import com.sagui.ext.render.layout.FatuExtLayoutRuleRender;
 import com.sagui.model.container.form.FatuForm;
 
 @SuppressWarnings({"rawtypes","unchecked"})
@@ -17,6 +18,7 @@ public class JextFormRender extends FatuAbstractRender<FatuForm> {
 		// Properties
 		super.composite.addRender(new JextTitleRender());
 		super.composite.addRender(new JextSizeFeatureRender());
+		super.composite.addRender(new FatuExtLayoutRuleRender<FatuForm>() );
 		// Layout and Layout Rules
         super.composite.addRender(new FatuExtLayoutRender());
 		// Children

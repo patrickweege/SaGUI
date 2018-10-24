@@ -17,8 +17,9 @@ public aspect FatuWatchGridAspect {
 
     private static final Logger log = FatuLoggerFactory.create(FatuWatchGridAspect.class);
 
+    
     @SuppressWarnings({ "rawtypes", "unchecked" })
-    after(com.sagui.model.grid.FatuGrid grid) returning: this(grid) && initialization(com.sagui.model.grid.FatuGrid.new(com.sagui.model.datamodel.IFatuTableModel+, com.sagui.model.selection.IFatuSelectionModel+)) {
+    after(com.sagui.model.grid.FatuGrid grid) returning: this(grid) && execution(com.sagui.model.grid.FatuGrid.new(com.sagui.model.datamodel.IFatuTableModel+, com.sagui.model.selection.IFatuSelectionModel+)) {
         if (log.isTraceEnabled()) log.trace("Intercept new {}(...)", grid.getClass());
         Object[] args = thisJoinPoint.getArgs();
         final FatuGrid theGrid = (FatuGrid) grid;
