@@ -40,15 +40,16 @@ public class JextLabelableFeatureRender<T extends FatuComponent> extends FatuCom
 
         protected Object getPropertyValue(T component, String prop) {
             FatuLabelPosition pos = (FatuLabelPosition) super.getPropertyValue(component, prop);
-            switch (pos) {
-                case TOP:
-                    return "top";
-                case LEFT:
-                    return "left";
-                case RIGHT:
-                    return "right";
-                default:
-                    return null;
+            if(pos == null) {
+            	return null;
+            } else if(pos == FatuLabelPosition.TOP) {
+            	return "top";
+            } else if(pos == FatuLabelPosition.LEFT) {
+            	return "left";
+            } else if(pos == FatuLabelPosition.RIGHT) {
+            	return "right";
+            } else {
+            	return null;
             }
         };
 

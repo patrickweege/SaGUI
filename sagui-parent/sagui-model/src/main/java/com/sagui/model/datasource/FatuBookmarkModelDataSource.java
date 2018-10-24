@@ -37,7 +37,7 @@ public class FatuBookmarkModelDataSource<BEAN, V> extends FatuAbstractDataSource
 
     @Override
     public V getValue() {
-        if (this.isEnabled()) {
+        if (this.isEnabled() && this.current != null) {
             return (V) this.tableModel.getValueAt(current, field);
         }
         return null;
@@ -45,7 +45,7 @@ public class FatuBookmarkModelDataSource<BEAN, V> extends FatuAbstractDataSource
 
     @Override
     public void tableChanged(FatuTableModelEvent evt) {
-        int rowIndex = tableModel.getRowIndex(current);
+        int rowIndex = current == null ? 0 : tableModel.getRowIndex(current);
         if(evt.getFirstRow() <= rowIndex && evt.getLastRow() >= rowIndex) {
             this.setChanged();
             this.notifyObservers();

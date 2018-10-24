@@ -41,7 +41,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
         tBoxID_I18N.setTranslation(Locale.GERMAN, "Mitarbeiter ID");
 
         tBoxID_Error_I18 = new I18n("tBoxID_Error_I18");
-        tBoxID_Error_I18.setDefault("Não é um Numero válido");
+        tBoxID_Error_I18.setDefault("Nï¿½o ï¿½ um Numero vï¿½lido");
 
         tBoxName_I18N = new I18n("tBoxName_I18N");
         tBoxName_I18N.setTranslation(CurrentLanguageResolver.getInstance().getCurrentLocale(), "Employee Name");
@@ -118,6 +118,8 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
         IFatuSelectionModel<IBookmark<Employee>> selectionModel = tableEmployee.getSelectionModel();
         selectionModel.addSelectionListener(new TableEmployeeSelectionListener());
 
+        this.setSize(new FatuSize(500, 500));
+        
         populate();
 
     }

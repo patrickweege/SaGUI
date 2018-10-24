@@ -115,6 +115,7 @@ public class ActionServlet extends HttpServlet {
                         changeManager.removeChanges(change.getComponentID());
                     }
                 }
+                if(log.isDebugEnabled()) log.debug("SaGUI-Action-Result: \n {}", sWriter.getBuffer().toString());
                 writer.write(sWriter.getBuffer().toString());
             }
         } finally {
