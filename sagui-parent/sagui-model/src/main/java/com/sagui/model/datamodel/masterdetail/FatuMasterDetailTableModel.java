@@ -59,13 +59,14 @@ public class FatuMasterDetailTableModel<M, D> extends FatuAbstractTableModel<D> 
     }
 
     @Override
-    public void remove(IBookmark<D> toRemove) {
+    public D remove(IBookmark<D> toRemove) {
+    	D removed = null;
         IDataset<D> theDataset = this.getDataset();
         DatasetIndex<D> theIndex = this.getDatasetIndex();
         int rowIndex = theDataset.indexOf(toRemove, theIndex);
         if (rowIndex >= 0) {
             IBookmark<M> masterBookmark = this.dataset.getValue(toRemove, this.masterBookmarkField);
-            D removed = theDataset.remove(toRemove);
+            removed = theDataset.remove(toRemove);
             Collection<M> masterCollection = this.masterTableModel.getValueAt(masterBookmark, this.masterDetailField);
             masterCollection.remove(removed);
             this.masterTableModel.setValueAt(masterCollection, masterBookmark, this.masterDetailField);
@@ -74,6 +75,7 @@ public class FatuMasterDetailTableModel<M, D> extends FatuAbstractTableModel<D> 
                 this.fireTableModelListeners(evt);
             }
         }
+        return removed;
     }
 
     @Override

@@ -144,10 +144,9 @@ public class EmployeeDAO {
 
     private void delete(long id, Connection connection) {
         try {
-            ResultSetHandler<List<Employee>> h = new BeanListHandler<Employee>(Employee.class);
 
             QueryRunner run = new QueryRunner();
-            run.update(connection, "DELETE FROM EMPLOYEE WHERE ID = ?", id, h);
+            run.update(connection, "DELETE FROM EMPLOYEE WHERE ID = ?", id);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

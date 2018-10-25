@@ -60,7 +60,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
     private final FatuTextBox tBoxSalary;
 
     private final FatuGrid tableEmployee;
-    private final EmployeeTableModel dataModel;
+    private final EmployeeTableModel tableModel;
 
     private final FatuBookmarkModelDataSource<Employee, String> dsEmpID;
     private final FatuBookmarkModelDataSource<Employee, String> dsEmpName;
@@ -90,11 +90,11 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
         empField = new FormaterField<Employee>(empField, NumberFormat.getNumberInstance());
         this.empSalaryField = new I18nFieldImpl<Employee>("salary", tBoxSalary_I18N, tBoxSalary_I18N, empField);
 
-        this.dataModel = new EmployeeTableModel();
-        this.dsEmpID = new FatuBookmarkModelDataSource<Employee, String>(dataModel, null, dataModel.empIDField);
+        this.tableModel = new EmployeeTableModel();
+        this.dsEmpID = new FatuBookmarkModelDataSource<Employee, String>(tableModel, null, tableModel.empIDField);
         this.dsEmpID.setEditable(false);
-        this.dsEmpName = new FatuBookmarkModelDataSource<Employee, String>(dataModel, null, dataModel.empNameField);
-        this.dsEmpSalary = new FatuBookmarkModelDataSource<Employee, String>(dataModel, null, dataModel.empSalaryField);
+        this.dsEmpName = new FatuBookmarkModelDataSource<Employee, String>(tableModel, null, tableModel.empNameField);
+        this.dsEmpSalary = new FatuBookmarkModelDataSource<Employee, String>(tableModel, null, tableModel.empSalaryField);
 
         this.tBoxID = new FatuTextBox(dsEmpID);
         this.tBoxID.setName("tBoxID");
@@ -112,7 +112,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
         tBoxSalary.setLabel(tBoxSalary_I18N);
         content.addChild(tBoxSalary, FatuAutoLayoutRule.AUTO_LAYOUT_RULE);
 
-        tableEmployee = new FatuGrid(dataModel);
+        tableEmployee = new FatuGrid(tableModel);
         //tableEmployee.setSize(new FatuSize(300, 400));
         content.addChild(tableEmployee, FatuAutoLayoutRule.AUTO_LAYOUT_RULE);
 
@@ -127,7 +127,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
 
     @Override
     protected void doCreate() {
-        IBookmark<Employee> created = dataModel.createNewEmployee();
+        IBookmark<Employee> created = tableModel.createNewEmployee();
         this.setCurrent(created);
     }
 
@@ -135,12 +135,12 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
     protected void doDelete() {
         IBookmark<Employee> toDelete = getCurrent();
         this.setCurrent(null);
-        dataModel.delete(toDelete);
+        tableModel.delete(toDelete);
     }
 
     @Override
     protected void doSave() {
-        dataModel.save(getCurrent());
+        tableModel.save(getCurrent());
         populate();
     }
 
@@ -153,7 +153,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
     protected void doSearch(String value) {
         if (NumberUtils.isDigits(value)) {
             long toSearch = NumberUtils.toLong(value);
-            IBookmark<Employee> found = dataModel.findByID(toSearch);
+            IBookmark<Employee> found = tableModel.findByID(toSearch);
             this.setCurrent(found);
         }
     }
@@ -167,7 +167,7 @@ public class EmployeeCRUDTestForm extends FatuAbstractCrudForm<Employee> {
     }
 
     private void populate() {
-        dataModel.reload();
+        tableModel.reload();
 
     }
 

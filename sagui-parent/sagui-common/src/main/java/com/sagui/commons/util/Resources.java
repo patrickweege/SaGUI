@@ -7,9 +7,14 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
+import org.slf4j.Logger;
+
+import com.sagui.dataset.commons.log.FatuLoggerFactory;
 
 public class Resources {
 
+    private static final Logger log = FatuLoggerFactory.create();
+	
 	private final byte[] bytes;
 
 	public Resources(String fileName) throws FileNotFoundException {
@@ -66,6 +71,7 @@ public class Resources {
 	}
 
 	private byte[] getResource(String fileName) throws FileNotFoundException {
+		log.debug("getResource: {}", fileName);
 		InputStream in = null;
 		try {
 			// try to get file from ClassLoader

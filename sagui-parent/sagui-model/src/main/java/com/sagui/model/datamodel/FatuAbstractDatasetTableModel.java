@@ -25,18 +25,20 @@ public abstract class FatuAbstractDatasetTableModel<T> extends FatuAbstractTable
     }
     
     @Override
-    public final void remove(IBookmark<T> toRemove) {
-        if (toRemove == null) return;
+    public final T remove(IBookmark<T> toRemove) {
+        if (toRemove == null) return null;
+        T removed = null;
         IDataset<T> theDataset = this.getDataset();
         DatasetIndex<T> theIndex = this.getDatasetIndex();
         int rowIndex = theDataset.indexOf(toRemove, theIndex);
         if (rowIndex >= 0) {
-            T removed = theDataset.remove(toRemove);
+            removed = theDataset.remove(toRemove);
             if (removed != null) {
                 FatuTableModelEvent evt = new FatuTableModelEvent(this, -1, rowIndex, rowIndex, Collections.singleton(removed), FatuTableModelEvent.FatuTableModelEventType.REMOVE);
                 this.fireTableModelListeners(evt);
             }
         }
+        return removed;
     }
 
     @Override

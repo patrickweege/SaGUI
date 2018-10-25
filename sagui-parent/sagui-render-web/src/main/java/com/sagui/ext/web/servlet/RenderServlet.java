@@ -78,10 +78,14 @@ public class RenderServlet extends HttpServlet {
 
         //String EXT_VERSION = "ext-4.2.1.883";
         //String EXT_VERSION = "ext-5.0.1-cdn";
-        String EXT_VERSION = "ext-5.0.1";
-        String THEME = "classic";
+        //String EXT_VERSION = "ext-5.0.1";
+        String EXT_VERSION = "6.6.0";
+        //String THEME = "classic";
+        String THEME = "neptune";
+        
 
-        Resources templateResource = new Resources(EXT_VERSION + ".ftl");
+        //Resources templateResource = new Resources(EXT_VERSION + ".ftl");
+        Resources templateResource = new Resources("ext-" + EXT_VERSION + ".ftl");
         Template theTemplate = new Template("Page", new InputStreamReader(new ByteArrayInputStream(templateResource.asBinary())), new Configuration());
 
         Map<String, Object> variables = new HashMap<String, Object>();

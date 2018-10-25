@@ -10,8 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
 
 import com.sagui.commons.util.Resources;
+import com.sagui.dataset.commons.log.FatuLoggerFactory;
 
 /**
  * Servlet implementation class PageServlet
@@ -20,6 +22,9 @@ import com.sagui.commons.util.Resources;
 public class ResourceServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
+    
+    private static final Logger log = FatuLoggerFactory.create();
+
 
     public ResourceServlet() {
         super();

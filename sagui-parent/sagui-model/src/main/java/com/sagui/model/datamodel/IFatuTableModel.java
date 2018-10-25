@@ -13,7 +13,7 @@ public interface IFatuTableModel<T> {
     
     public int getRowCount();
 
-    public void remove(IBookmark<T> toRemove);
+    public T remove(IBookmark<T> toRemove);
 
     public IBookmark<T> insert(T toAdd);
 

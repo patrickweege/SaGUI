@@ -7,13 +7,10 @@ import java.util.Locale;
 
 import org.apache.commons.lang.ObjectUtils;
 
-import test.com.sagui.model.pages.employee.bean.Employee;
-import test.com.sagui.model.pages.employee.dao.EmployeeDAO;
-
 import com.sagui.dataset.commons.comparator.BeanComparatorUtil;
 import com.sagui.dataset.commons.comparator.IBeanComparator;
-import com.sagui.dataset.commons.comparator.IFieldComparatorMetadata;
 import com.sagui.dataset.commons.comparator.IBeanComparator.Order;
+import com.sagui.dataset.commons.comparator.IFieldComparatorMetadata;
 import com.sagui.dataset.commons.dataset.Dataset;
 import com.sagui.dataset.commons.dataset.DatasetIndex;
 import com.sagui.dataset.commons.dataset.IBookmark;
@@ -24,6 +21,9 @@ import com.sagui.dataset.commons.field.I18nFieldImpl;
 import com.sagui.dataset.commons.field.IField;
 import com.sagui.dataset.commons.i18n.I18n;
 import com.sagui.model.datamodel.impl.FatuDefaultDatasetTableModel;
+
+import test.com.sagui.model.pages.employee.bean.Employee;
+import test.com.sagui.model.pages.employee.dao.EmployeeDAO;
 
 public class EmployeeTableModel extends FatuDefaultDatasetTableModel<Employee> {
 
@@ -122,9 +122,8 @@ public class EmployeeTableModel extends FatuDefaultDatasetTableModel<Employee> {
     }
 
     public void delete(IBookmark<Employee> toDelete) {
-        IDataset<Employee> theDataset = this.getDataset();
-        Employee empToDelete = theDataset.getRow(toDelete);
-        this.employeeDAO.delete(empToDelete.getId());
+    	Employee removedEmp = super.remove(toDelete);
+        this.employeeDAO.delete(removedEmp.getId());
     }
 
     public IBookmark<Employee> findByID(long toFind) {
