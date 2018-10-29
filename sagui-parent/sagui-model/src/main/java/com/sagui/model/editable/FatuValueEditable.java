@@ -28,21 +28,19 @@ public abstract class FatuValueEditable<V> extends FatuEditable {
     }
 
     public void setValue(V newValue) {
+    	this.setErrorMsg(null);
+        this.value = newValue;
+        try {
+            if (dataSource != null) {
+                dataSource.setValue(value);
+                this.value = dataSource.getValue();
+            }
+        } catch (Exception e) {
+            this.setErrorMsg(new I18n("error").setDefault(e.getMessage()));
+        }    	
+    	
     	if (this.getErrorMsg() != null) {
     		this.setErrorMsg(null);
-    	}
-    	
-    	if ((this.value != null && !this.value.equals(newValue)) || (this.value == null && newValue != null)) {
-    		this.value = newValue;
-    	
-	        try {
-	            if (dataSource != null) {
-	                dataSource.setValue(newValue);
-	                this.value = dataSource.getValue();
-	            }
-	        } catch (Exception e) {
-	            this.setErrorMsg(new I18n("error").setDefault(e.getMessage()));
-	        }
     	}
     }
 
