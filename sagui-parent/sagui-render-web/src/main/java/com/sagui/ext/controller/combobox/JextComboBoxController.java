@@ -48,7 +48,9 @@ public class JextComboBoxController implements IJextController<FatuComboBox> {
                         errorMsg.setTranslation(CurrentLanguageResolver.getInstance().getCurrentLocale(), "Pelo menos um item selecionado não foi encontrado");
                         target.setErrorMsg(errorMsg);
                     } else {
-                        target.setErrorMsg(null);
+                    	if (target.getErrorMsg() != null) {
+                    		target.setErrorMsg(null);
+                    	}
                     }
                 }
                 return null;
