@@ -3,6 +3,8 @@ package com.sagui.ext.render.listener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
+import org.apache.commons.lang.ObjectUtils;
+
 import com.pw.common.JextContext;
 import com.sagui.ext.common.render.ChangesManager;
 import com.sagui.model.FatuComponent;
@@ -12,6 +14,9 @@ public class WebRenderPropertyChangedListener implements PropertyChangeListener 
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
+    	if(ObjectUtils.equals(evt.getOldValue(), evt.getNewValue())) {
+    		return;
+    	}
         ChangesManager pChanges = JextContext.getValue(ChangesManager.CHANGED_PROPERTIES_KEY);
         FatuPage<?> currentPage = JextContext.getValue("CURRENT_PAGE");
         if (pChanges != null && currentPage != null) {
