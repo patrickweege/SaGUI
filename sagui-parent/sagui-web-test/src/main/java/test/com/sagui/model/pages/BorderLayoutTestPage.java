@@ -20,7 +20,7 @@ public class BorderLayoutTestPage extends FatuPage<FatuBorderLayout> {
 
     private FatuForm<FatuHBoxLayout> form1;
     private FatuForm<FatuVBoxLayout> form2;
-    private FatuForm<FatuAutoLayout> employeeForm;
+    private EmployeeForm employeeForm;
 
     public BorderLayoutTestPage() {
         super(new FatuBorderLayout());

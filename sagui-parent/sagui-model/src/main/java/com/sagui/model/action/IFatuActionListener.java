@@ -1,7 +1,7 @@
 package com.sagui.model.action;
 
-public interface IFatuActionListener {
+public interface IFatuActionListener<EVT extends IFatuActionEvent> {
 
-	public void actionPerformed(IFatuActionEvent evt);
+	public void actionPerformed(EVT evt);
 
 }

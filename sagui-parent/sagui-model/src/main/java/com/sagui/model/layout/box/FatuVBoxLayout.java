@@ -8,6 +8,7 @@ import com.sagui.model.layout.IFatuLayoutManager;
 public class FatuVBoxLayout implements IFatuLayoutManager<FatuVBoxLayoutRule>, IFatuPaddingFeature {
 
     public static final FatuVBoxLayout VBOX_DEFAULT = new FatuVBoxLayout(FatuBoxLayoutAlign.START, FatuBoxPosition.START);
+    public static final FatuVBoxLayout VBOX_STRETCH_START = new FatuVBoxLayout(FatuBoxLayoutAlign.STRETCH, FatuBoxPosition.START);
 
     private final FatuBoxLayoutAlign align;
     private final FatuBoxPosition position;

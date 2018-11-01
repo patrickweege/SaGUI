@@ -24,9 +24,11 @@ public class FatuCompositeRender<T> implements IRender<T> {
 
     @Override
     public boolean render(T component, RenderWriter out) throws RenderException {
+    	boolean wasAnyRendered = false; 
         for (IRender<T> render : renders) {
             boolean rendered = render.render(component, out);
             if (rendered) {
+            	wasAnyRendered = wasAnyRendered || rendered;
                 out.pushComma();
             }
         }

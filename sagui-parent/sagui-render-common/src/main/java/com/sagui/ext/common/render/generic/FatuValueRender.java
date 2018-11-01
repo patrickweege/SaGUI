@@ -5,11 +5,11 @@ import com.sagui.ext.common.render.RenderException;
 import com.sagui.ext.common.render.util.RenderWriter;
 
 
-public abstract class VatuValueRender<T> implements IRender<T> {
+public abstract class FatuValueRender<T> implements IRender<T> {
 
     private final String extProperty;
     
-    public VatuValueRender(String extProperty) {
+    public FatuValueRender(String extProperty) {
         this.extProperty = extProperty;
     }
     

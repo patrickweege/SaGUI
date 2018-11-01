@@ -23,7 +23,7 @@ public class ButtonTestPage extends FatuPage<FatuAutoLayout> {
 
     private FatuForm<FatuAutoLayout> form1;
     private FatuForm<FatuAutoLayout> form2;
-    private FatuForm<FatuAutoLayout> employeeForm;
+    private EmployeeForm employeeForm;
 
     private FatuButton btnMakeGreater;
     private FatuButton btnMakeLess;

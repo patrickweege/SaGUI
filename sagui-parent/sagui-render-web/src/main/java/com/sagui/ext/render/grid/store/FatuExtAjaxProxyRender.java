@@ -6,7 +6,7 @@ import com.sagui.ext.common.render.RenderException;
 import com.sagui.ext.common.render.generic.FatuExtCreationMode;
 import com.sagui.ext.common.render.generic.FatuObjectPropertyRender;
 import com.sagui.ext.common.render.generic.FatuUnmodifiablePropertyRender;
-import com.sagui.ext.common.render.generic.VatuValueRender;
+import com.sagui.ext.common.render.generic.FatuValueRender;
 import com.sagui.ext.common.render.util.RenderWriter;
 import com.sagui.model.FatuComponent;
 import com.sagui.model.container.page.FatuPage;
@@ -27,7 +27,7 @@ public class FatuExtAjaxProxyRender<T extends FatuComponent> extends FatuObjectP
         // NOTHING to do here at time
     }
 
-    private class InternalExtraParamRender extends VatuValueRender<T> {
+    private class InternalExtraParamRender extends FatuValueRender<T> {
 
         public InternalExtraParamRender() {
             super("extraParams");

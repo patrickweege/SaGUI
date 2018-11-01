@@ -7,7 +7,6 @@ import com.sagui.ext.common.render.RenderException;
 import com.sagui.ext.common.render.util.RenderWriter;
 import com.sagui.model.FatuComponent;
 
-@SuppressWarnings("unchecked")
 public class FatuAbstractRender<T extends FatuComponent> implements IComponentRender<T> {
 
 	protected final FatuCompositeRender<T> composite;

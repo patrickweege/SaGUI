@@ -4,12 +4,13 @@ import java.awt.Insets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
-import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections4.CollectionUtils;
 
 import com.sagui.dataset.commons.i18n.I18n;
 import com.sagui.model.FatuComponent;
-import com.sagui.model.action.IFatuActionEvent;
+import com.sagui.model.action.FatuFireActionListenerClosure;
 import com.sagui.model.action.IFatuActionListener;
 import com.sagui.model.action.IFatuActionListenerFeature;
 import com.sagui.model.feature.IFatuEnabledFeature;
@@ -18,9 +19,9 @@ import com.sagui.model.feature.IFatuLabelFeature;
 import com.sagui.model.feature.IFatuMarginFeature;
 import com.sagui.model.feature.IFatuVisibleFeature;
 
-public class FatuButton extends FatuComponent implements IFatuHintFeature, IFatuLabelFeature, IFatuActionListenerFeature, IFatuEnabledFeature, IFatuVisibleFeature, IFatuMarginFeature {
+public class FatuButton extends FatuComponent implements IFatuHintFeature, IFatuLabelFeature, IFatuActionListenerFeature<FatuButtonClickEvent>, IFatuEnabledFeature, IFatuVisibleFeature, IFatuMarginFeature {
 
-	private final ArrayList<IFatuActionListener> actionListeners;
+	private final List<IFatuActionListener<FatuButtonClickEvent>> actionListeners;
 	
 	private I18n label;
 	private I18n hint;
@@ -31,7 +32,7 @@ public class FatuButton extends FatuComponent implements IFatuHintFeature, IFatu
 	
 	public FatuButton() {
 		super();
-		this.actionListeners = new ArrayList<IFatuActionListener>();
+		this.actionListeners = new ArrayList<IFatuActionListener<FatuButtonClickEvent>>();
 		this.visible = true;
 		this.enabled = true;
 	}
@@ -65,23 +66,23 @@ public class FatuButton extends FatuComponent implements IFatuHintFeature, IFatu
 	}
 
 	@Override
-	public void addActionListener(IFatuActionListener listener) {
+	public void addActionListener(IFatuActionListener<FatuButtonClickEvent> listener) {
 		this.actionListeners.add(listener);
 	}
 
     @Override
-	public boolean removeActionListener(IFatuActionListener listener) {
+	public boolean removeActionListener(IFatuActionListener<FatuButtonClickEvent> listener) {
 		return this.actionListeners.remove(listener);
 	}
 
     @Override
-	public Collection<IFatuActionListener> getActionListeners() {
+	public Collection<IFatuActionListener<FatuButtonClickEvent>> getActionListeners() {
 		return Collections.unmodifiableCollection(actionListeners);
 	}
 
     @Override
-	public void fireActionListeners(IFatuActionEvent evt) {
-		CollectionUtils.forAllDo(actionListeners, new FatuFireActionListenerClosure(evt));
+	public void fireActionListeners(FatuButtonClickEvent evt) {
+		CollectionUtils.forAllDo(actionListeners, new FatuFireActionListenerClosure<FatuButtonClickEvent>(evt));
 	}
     
     public void click() {
