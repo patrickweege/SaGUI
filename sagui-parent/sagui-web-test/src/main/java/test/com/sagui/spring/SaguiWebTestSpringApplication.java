@@ -1,4 +1,4 @@
-package test.com.sagui.spring.application;
+package test.com.sagui.spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,10 +12,10 @@ import com.sagui.ext.web.servlet.PageServlet;
 import com.sagui.ext.web.servlet.RenderServlet;
 
 @SpringBootApplication
-public class SaguiWebTestApplication {
+public class SaguiWebTestSpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SaguiWebTestApplication.class, args);
+		SpringApplication.run(SaguiWebTestSpringApplication.class, args);
 	}
 
 	@Bean

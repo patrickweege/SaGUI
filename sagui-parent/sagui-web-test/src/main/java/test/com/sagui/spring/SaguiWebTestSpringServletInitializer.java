@@ -1,13 +1,13 @@
-package test.com.sagui.spring.application;
+package test.com.sagui.spring;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-public class SaguiWebTestServletInitializer extends SpringBootServletInitializer {
+public class SaguiWebTestSpringServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SaguiWebTestApplication.class);
+		return application.sources(SaguiWebTestSpringApplication.class);
 	}
 
 }

@@ -27,9 +27,6 @@
 					<groupId>org.slf4j</groupId>
 				    <artifactId>slf4j-api</artifactId>
 				</exclusion>
-				
-				
-				
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -54,8 +51,6 @@
 			<artifactId>sagui-render-web</artifactId>
 			<version>1.0</version>
 		</dependency>
-		<!-- <dependency> <groupId>com.sagui</groupId> <artifactId>sagui-render-mobile</artifactId> 
-			<version>1.0</version> </dependency> -->
 		<dependency>
 			<groupId>com.sagui</groupId>
 			<artifactId>sagui-model</artifactId>
@@ -93,6 +88,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<dependency>	
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 	</dependencies>
