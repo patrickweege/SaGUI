@@ -13,7 +13,7 @@ import com.sagui.model.layout.box.FatuVBoxLayout;
 import com.sagui.model.layout.box.FatuVBoxLayoutRule;
 /**
  *  test.com.jext.model.pages.BorderLayoutTestPage
- * @author F0FP250
+ * @author patrick.weege
  *
  */
 public class BorderLayoutTestPage extends FatuPage<FatuBorderLayout> {

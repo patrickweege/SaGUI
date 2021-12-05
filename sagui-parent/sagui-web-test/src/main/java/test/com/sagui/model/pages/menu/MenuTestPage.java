@@ -21,7 +21,7 @@ import com.sagui.model.layout.fit.FatuFitLayoutRule;
 import test.com.sagui.model.pages.EmployeeForm;
 /**
  *  test.com.jext.model.pages.BorderLayoutTestPage
- * @author F0FP250
+ * @author patrick.weege
  *
  */
 public class MenuTestPage extends FatuPage<FatuBorderLayout> {

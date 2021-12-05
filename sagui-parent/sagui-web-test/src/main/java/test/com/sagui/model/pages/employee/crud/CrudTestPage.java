@@ -8,7 +8,7 @@ import com.sagui.model.layout.border.FatuRegion;
 /**
  * test.com.jext.model.pages.crud.CrudTestPage
  * 
- * @author F0FP250
+ * @author patrick.weege
  * 
  */
 public class CrudTestPage extends FatuPage<FatuBorderLayout> {

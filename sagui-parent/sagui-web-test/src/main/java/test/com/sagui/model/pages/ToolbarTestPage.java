@@ -13,7 +13,7 @@ import com.sagui.model.layout.auto.FatuAutoLayoutRule;
 import com.sagui.model.layout.border.FatuBorderLayout;
 /**
  *  test.com.jext.model.pages.ToolbarTestPage
- * @author F0FP250
+ * @author patrick.weege
  *
  */
 public class ToolbarTestPage extends FatuPage<FatuAutoLayout> {

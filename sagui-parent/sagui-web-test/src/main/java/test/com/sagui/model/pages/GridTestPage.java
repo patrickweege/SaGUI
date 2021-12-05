@@ -33,7 +33,7 @@ import com.sagui.model.layout.auto.FatuAutoLayoutRule;
 /**
  * test.com.jext.model.pages.GridTestPage
  * 
- * @author F0FP250
+ * @author patrick.weege
  * 
  */
 public class GridTestPage extends FatuPage<FatuAutoLayout> {
@@ -73,7 +73,7 @@ public class GridTestPage extends FatuPage<FatuAutoLayout> {
         IBeanComparator<String[]> beanComparator = BeanComparatorUtil.getBeanComparator(new IFieldComparatorMetadata<String[]>(uuIDField, true));
         //DatasetIndex<String[]> uuidIndex = dataset.addIndex(beanComparator);
 
-        I18n codigo = new I18n("").setDefault("Código");
+        I18n codigo = new I18n("").setDefault("Cï¿½digo");
         IField<String[]> idField = new I18nFieldImpl<String[]>(codigo, codigo, new ArrayBeanFieldImpl<String>(1, "Identificador", true));
         idField = dataset.addField(idField);
         beanComparator = BeanComparatorUtil.getBeanComparator(new IFieldComparatorMetadata<String[]>(idField, true));

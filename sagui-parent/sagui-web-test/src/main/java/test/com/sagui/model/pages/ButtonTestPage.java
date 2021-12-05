@@ -16,7 +16,7 @@ import com.sagui.model.layout.auto.FatuAutoLayout;
 import com.sagui.model.layout.auto.FatuAutoLayoutRule;
 /**
  *  test.com.jext.model.pages.button.ButtonTestPage
- * @author F0FP250
+ * @author patrick.weege
  *
  */
 public class ButtonTestPage extends FatuPage<FatuAutoLayout> {

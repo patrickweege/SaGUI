@@ -19,7 +19,7 @@ import test.com.sagui.model.pages.employee.bean.Employee;
 
 /**
  * test.com.jext.model.pages.button.EmployeeForm
- * @author F0FP250
+ * @author patrick.weege
  *
  */
 public class EmployeeForm extends FatuForm<FatuVBoxLayout> {

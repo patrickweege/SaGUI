@@ -10,7 +10,7 @@ import com.sagui.model.layout.auto.FatuAutoLayout;
 import com.sagui.model.layout.auto.FatuAutoLayoutRule;
 /**
  *  test.com.jext.model.pages.CheckboxTestPage
- * @author F0FP250
+ * @author patrick.weege
  *
  */
 public class CheckboxTestPage extends FatuPage<FatuAutoLayout> {

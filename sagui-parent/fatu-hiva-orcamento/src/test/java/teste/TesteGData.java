@@ -19,7 +19,7 @@ public class TesteGData {
         System.setProperty("https.proxyHost", "proxysp.sp.t-systems.com.br");
         System.setProperty("https.proxyPort", "8002");
         
-        String encoded = new String(Base64.encodeBase64(new String("f0fp250:#Senha001").getBytes()));
+        String encoded = new String(Base64.encodeBase64(new String("patrick.weege:#Senha001").getBytes()));
         String base64encodedCredentials = "Basic " + encoded;
         
         SpreadsheetService service = new SpreadsheetService("MySpreadsheetIntegration-v1");

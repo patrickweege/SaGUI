@@ -26,7 +26,7 @@ import com.sagui.model.selection.IFatuSelectionListener;
 /**
  * test.com.jext.model.pages.ComboBoxTestPage
  * 
- * @author F0FP250
+ * @author patrick.weege
  * 
  */
 public class ComboBoxTestPage extends FatuPage<FatuAutoLayout> {
