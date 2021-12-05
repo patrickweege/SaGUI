@@ -22,8 +22,7 @@
 
 		<dependency>
 			<groupId>com.sagui.dataset</groupId>
-			<artifactId>sagui-dataset</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<artifactId>sagui-dataset-jar</artifactId>
 		</dependency>
 
 		<dependency>
